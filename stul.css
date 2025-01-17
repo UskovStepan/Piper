@@ -38,19 +38,77 @@ body {
 	font-size: 16px;
 	color: black;
 	font-family: Roboto;
-
 }
 
+/*-------------------------------------------*/
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 ._container{
 	max-width: 1219px;
+	height: 84px;
 	margin: 0 auto;
-}
-
-img{
 	background-color: #007765;
 }
+/*--ШАПКА------------------------------------*/
+.header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;	
+	z-index: 50;
+/*-------------------------------------------*/	
+}
+.imglogo{
+	margin: 19px;
+	width: 185px;
+	height: 45px;
+}
+/*-------------------------------------------*/
+.header_container{
+	display: flex;
+	min-height: 84px;
+	align-items: center;
+}
+/*-------------------------------------------*/
+.header_menu{
+	margin: 0px 0px 0px 400px;
+}
+@media (max-width: 992px) {
+	.header_menu{
+		margin: 0px 0px 0px 80px;
+	}
+}
+/*-------------------------------------------*/ 
+.menu{
+
+}
+.menu_list{
+	flex-wrap: wrap;
+	display: flex;
+	}
+.menu_item{
+	margin: 0px 10px 0px 0px;
+}
+
+.menu_link{
+	color:#ffffff;
+	font-weight: medium;
+	line-height: 24px;
+	
+}
+/*-------------------------------------------*/ 
+.imagfon{
+	display: block;
+	margin: 0px auto;
+	align-items: center;
+}
+/*--MAIN------------------------------------*/
+.main{
+	flex:1 1 auto;
+}
+/*--ПОДВАЛ------------------------------------*/
