@@ -10,6 +10,8 @@
 }
 a {
 	text-decoration: none;
+	font-family: Roboto;
+	color: #000000;
 }
 
 ul,
@@ -31,6 +33,17 @@ h6{
 	font-weight: inherit;
 	font-size: inherit;
 }
+h1{
+	position: relative;
+	top: 60px;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 64px;
+	color: #007765;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
 html,
 body {
 	height: 100%;
@@ -46,14 +59,14 @@ body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-}
+	}
 
 ._container{
 	max-width: 1219px;
 	height: 84px;
 	margin: 0 auto;
 	background-color: #007765;
-}
+	}
 /*--ШАПКА------------------------------------*/
 .header{
 	position: fixed;
@@ -61,6 +74,7 @@ body {
 	left: 0;
 	top: 0;	
 	z-index: 50;
+	
 /*-------------------------------------------*/	
 }
 .imglogo{
@@ -73,6 +87,7 @@ body {
 	display: flex;
 	min-height: 84px;
 	align-items: center;
+	
 }
 /*-------------------------------------------*/
 .header_menu{
@@ -84,15 +99,16 @@ body {
 	}
 }
 /*-------------------------------------------*/ 
-.menu{
+/*.menu{}*/
 
-}
 .menu_list{
 	flex-wrap: wrap;
 	display: flex;
-	}
+	margin: 0px 0px 0px 200px;
+}
 .menu_item{
 	margin: 0px 10px 0px 0px;
+
 }
 
 .menu_link{
@@ -101,14 +117,87 @@ body {
 	line-height: 24px;
 	
 }
-/*-------------------------------------------*/ 
+/*--MAIN---------------------------------------*/ 
 .imagfon{
+	position: relative;
 	display: block;
+	width: 1219px;
 	margin: 0px auto;
+	margin-top: 84px;
 	align-items: center;
 }
-/*--MAIN------------------------------------*/
-.main{
-	flex:1 1 auto;
+.imagfon img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.text-overlay{
+	position: absolute;
+	top: 50%; 
+    left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 500;
+	font-size: 72px;
+	color: white;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+/*------------------------------------*/
+.first-text{
+	display: block; 
+    flex-direction: column; 
+    justify-content: center; 
+    height: 719px;
+    width: 1219px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+}
+
+.title h1{
+	margin: 0;
+	font-size: 64px;
+	color: #007765;
+}
+
+.txt1 a{
+	margin-top: 10px, auto;
+	font-size: 24px; 
+    text-decoration: none; 
+    color: inherit;
+}
+
+.text-the-promlem {
+	margin-top: 60px;
+	text-align: left;
+	padding-left: 55px;
+	padding-right: 53px;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.imagfon2{
+	position: relative;
+	display: block;
+	width: 1219px;
+	margin: 0px auto;
+	margin-top: 0px;
+	align-items: center;
+}
+
+.second-text{
+	display: block; 
+    flex-direction: column; 
+    justify-content: center; 
+    height: 719px;
+    width: 1219px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #EEEEEE;
 }
 /*--ПОДВАЛ------------------------------------*/
